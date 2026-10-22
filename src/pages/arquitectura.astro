@@ -1,85 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura</title>
+</head>
+<body>
+    
 
-<Layout title="Arquitectura Zen">
-<div class="tech-container">
-    <h1>La Evolución de la Arquitectura Zen</h1>
-    <p class="subtitle">Cómo las microarquitecturas de AMD cambiaron el mercado.</p>
-
-    <div class="timeline">
-<div class="timeline-item">
-        <h2>Zen / Zen+</h2>
-        <p>Introducción de la tecnología Chiplet y la plataforma AM4.</p>
-    </div>
-    <div class="timeline-item">
-        <h2>Zen 2 & Zen 3</h2>
-        <p>Saltos masivos en IPC (Instrucciones por Ciclo) y caché unificada 3D V-Cache.</p>
-    </div>
-    <div class="timeline-item">
-        <h2>Zen 4 & Zen 5</h2>
-        <p>Soporte para DDR5, PCIe 5.0 y litografía avanzada de última generación.</p>
-    </div>
-    </div>
-</div>
-</Layout>
-
-<style>
-  /* Estilos específicos de Arquitectura */
-.tech-container h1 {
-    font-size: 2.2rem;
-    color: var(--ryzen-orange);
-}
-
-.subtitle {
-    color: var(--text-muted);
-    margin-bottom: 2rem;
-}
-
-.timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.timeline-item {
-    background-color: var(--card-bg);
-    padding: 1.5rem;
-    border-left: 4px solid var(--ryzen-orange);
-    border-radius: 0 8px 8px 0;
-}
-
-    .timeline-item h2 {
-    font-size: 1.3rem;
-    margin-bottom: 0.4rem;
-    }
-
-.timeline-item p {
-    color: var(--text-muted);---
-import Layout from '../layouts/Layout.astro';}
----
-
-<Layout title="Arquitectura Zen">
-<div class="tech-container">
-    <h1>La Evolución de la Arquitectura Zen</h1>
-    <p class="subtitle">Cómo las microarquitecturas de AMD cambiaron el mercado.</p>
-
-    <div class="timeline">
-    <div class="timeline-item">
-        <h2>Zen / Zen+</h2>
-        <p>Introducción de la tecnología Chiplet y la plataforma AM4.</p>
-    </div>
-    <div class="timeline-item">
-        <h2>Zen 2 & Zen 3</h2>
-        <p>Saltos masivos en IPC (Instrucciones por Ciclo) y caché unificada 3D V-Cache.</p>
-    </div>
-    <div class="timeline-item">
-        <h2>Zen 4 & Zen 5</h2>
-        <p>Soporte para DDR5, PCIe 5.0 y litografía avanzada de última generación.</p>
-    </div>
-    </div>
-</div>
-</Layout>
 
 <style>
   /* Estilos específicos de Arquitectura */
@@ -112,5 +43,31 @@ import Layout from '../layouts/Layout.astro';}
 }
 
 .timeline-item p {
-    color: var(--text-muted)
-;}
+    color: var(--text-muted);
+}
+</style>
+
+<Layout title="Arquitectura Zen">
+<div class="tech-container">
+    <h1>La Evolución de la Arquitectura Zen</h1>
+    <p class="subtitle">Cómo las microarquitecturas de AMD cambiaron el mercado.</p>
+
+    <div class="timeline">
+<div class="timeline-item">
+        <h2>Zen / Zen+</h2>
+        <p>Introducción de la tecnología Chiplet y la plataforma AM4.</p>
+    </div>
+    <div class="timeline-item">
+        <h2>Zen 2 & Zen 3</h2>
+        <p>Saltos masivos en IPC (Instrucciones por Ciclo) y caché unificada 3D V-Cache.</p>
+    </div>
+    <div class="timeline-item">
+        <h2>Zen 4 & Zen 5</h2>
+        <p>Soporte para DDR5, PCIe 5.0 y litografía avanzada de última generación.</p>
+    </div>
+    </div>
+</div>
+</Layout>
+
+</body>
+</html>
