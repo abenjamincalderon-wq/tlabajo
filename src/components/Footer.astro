@@ -1,0 +1,68 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank" rel="noopener"
+                >X / Twitter</a
+            >
+            <a href="https://youtube.com" target="_blank" rel="noopener"
+                >YouTube</a
+            >
+            <a href="https://reddit.com" target="_blank" rel="noopener"
+                >Reddit</a
+            >
+            <a href="https://discord.com" target="_blank" rel="noopener"
+                >Discord</a
+            >
+        </div>
+        <div class="copyright">
+            <p>
+                &copy; {currentYear} RyzenTech. Todos los derechos reservados. AMD
+                y Ryzen son marcas registradas.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .site-footer {
+        background-color: #08090c;
+        border-top: 1px solid #2a2e39;
+        padding: 2rem 0;
+        margin-top: auto;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .social-links a {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        transition: color 0.2s;
+    }
+
+    .social-links a:hover {
+        color: var(--ryzen-orange);
+    }
+
+    .copyright p {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        text-align: center;
+    }
+</style>

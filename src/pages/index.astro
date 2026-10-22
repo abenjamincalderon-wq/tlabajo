@@ -1,16 +1,102 @@
 ---
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Procesadores AMD Ryzen">
+	<section class="hero-ryzen">
+		<h1>Potencia Imparable con AMD Ryzen</h1>
+		<p>
+			Descubre la línea de procesadores que revolucionó la computación de
+			alto rendimiento.
+		</p>
+		<a href="/arquitectura" class="btn-primary">Explorar Arquitectura</a>
+	</section>
+
+	<section class="family-grid">
+		<div class="cpu-card r3">
+			<h3>Ryzen 3</h3>
+			<p>Rendimiento esencial para tareas diarias y gaming de entrada.</p>
+		</div>
+		<div class="cpu-card r5">
+			<h3>Ryzen 5</h3>
+			<p>El punto dulce para gamers y creadores de contenido.</p>
+		</div>
+		<div class="cpu-card r7">
+			<h3>Ryzen 7</h3>
+			<p>Potencia avanzada para tareas pesadas y multitarea extrema.</p>
+		</div>
+		<div class="cpu-card r9">
+			<h3>Ryzen 9</h3>
+			<p>Rendimiento entusiasta sin concesiones para profesionales.</p>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	/* Estilos específicos de Inicio */
+	.hero-ryzen {
+		text-align: center;
+		padding: 4rem 2rem;
+		background: radial-gradient(
+			circle at center,
+			#2e0d00 0%,
+			var(--dark-bg) 70%
+		);
+		border: 1px solid #ff450033;
+		border-radius: 16px;
+		margin-bottom: 3rem;
+	}
+
+	.hero-ryzen h1 {
+		font-size: 2.8rem;
+		color: var(--text-light);
+		margin-bottom: 1rem;
+	}
+
+	.hero-ryzen p {
+		color: var(--text-muted);
+		font-size: 1.2rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.btn-primary {
+		display: inline-block;
+		padding: 0.8rem 1.8rem;
+		background: linear-gradient(
+			45deg,
+			var(--ryzen-orange),
+			var(--ryzen-red)
+		);
+		color: white;
+		font-weight: bold;
+		border-radius: 8px;
+		transition: transform 0.2s;
+	}
+
+	.btn-primary:hover {
+		transform: translateY(-2px);
+	}
+
+	.family-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.cpu-card {
+		background-color: var(--card-bg);
+		padding: 1.5rem;
+		border-radius: 12px;
+		border-top: 4px solid var(--ryzen-orange);
+	}
+
+	.cpu-card h3 {
+		font-size: 1.4rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.cpu-card p {
+		color: var(--text-muted);
+		font-size: 0.95rem;
+	}
+</style>

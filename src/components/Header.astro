@@ -1,0 +1,73 @@
+---
+
+---
+
+<header class="site-header">
+    <div class="header-container">
+        <a href="/" class="brand">
+            <span class="logo">🔴</span>
+            <span class="site-name">RyzenTech</span>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/arquitectura">Arquitectura Zen</a></li>
+                <li><a href="/tejon-melero">El Tejón Melero 🦡</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+    .site-header {
+        background-color: rgba(15, 17, 21, 0.95);
+        border-bottom: 2px solid var(--ryzen-orange);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .site-name {
+        font-size: 1.5rem;
+        font-weight: 800;
+        background: linear-gradient(45deg, var(--ryzen-orange), #ff7b00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .main-nav ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .main-nav a {
+        color: var(--text-light);
+        font-weight: 600;
+        transition: color 0.2s;
+    }
+
+    .main-nav a:hover {
+        color: var(--ryzen-orange);
+    }
+</style>
